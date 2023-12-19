@@ -4,18 +4,18 @@ import numpy as np
 from paho.mqtt import client as mqtt
 import sys
 
-ada_url='broker.hivemq.com'
+ada_url='yourbroker'
 mq=mqtt.Client()
 
-xclient= 'xAxisME35'
+xclient= 'Aclient'
 fred1=mqtt.Client(xclient)
 fred1.connect(ada_url)
 
-yclient= 'yAxisME35'
+yclient= 'Bclient'
 fred2=mqtt.Client(yclient)
 fred2.connect(ada_url)
 
-arm='xLocME35'
+arm='Cclient'
 fred3=mqtt.Client(arm)
 fred3.connect(ada_url)
 
